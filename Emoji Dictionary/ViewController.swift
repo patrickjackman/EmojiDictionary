@@ -12,14 +12,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
     
-    var emoji = ["😃","😋","🤠","😡","😤","☠️","👵🏻","👩🏻‍🍳","🖕🏻","🤜"]
-    
+    var emoji : [Emoji] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     tableView.dataSource = self
     tableView.delegate = self
+    emoji = makeEmojiArray()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return emoji.count
@@ -28,7 +28,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
         let cell = UITableViewCell()
-            cell.textLabel?.text = emoji[indexPath.row]
+        let emojis = emoji[indexPath.row]
+            cell.textLabel?.text = emojis.stringEmoji
             return cell
     }
     
@@ -38,7 +39,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(sender)
+        let defVC = segue.destination as! DefinitionViewController
+        defVC.emoji = sender as! Emoji
     }
     
     
@@ -47,6 +49,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
 
+    func makeEmojiArray() -> [Emoji] {
+        var emoji1 = Emoji()
+        emoji1.stringEmoji = "😃"
+        emoji1.category = "Smiley"
+        emoji1.birthYear = 2011
+        emoji1.definition = "Standard Smiley"
+        
+        var emoji2 = Emoji()
+        emoji2.stringEmoji = "😋"
+        emoji2.category = "Smiley"
+        emoji2.birthYear = 2012
+        emoji2.definition = "Tongue Smiley"
+        
+        return [emoji1, emoji2]
+    }
 
 }
 

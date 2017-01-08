@@ -68,15 +68,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9o-aT-Xkz">
+                                <rect key="frame" x="103" y="398" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9e-jv-NPj">
+                                <rect key="frame" x="103" y="439" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="i9e-jv-NPj" firstAttribute="top" secondItem="l9o-aT-Xkz" secondAttribute="bottom" constant="20" id="6Kp-4r-lJA"/>
+                            <constraint firstItem="i9e-jv-NPj" firstAttribute="centerX" secondItem="ywY-bv-VIs" secondAttribute="centerX" id="BJF-3j-PWd"/>
+                            <constraint firstItem="l9o-aT-Xkz" firstAttribute="top" secondItem="HAV-c3-42W" secondAttribute="bottom" constant="20" id="HMi-Za-Knv"/>
+                            <constraint firstItem="l9o-aT-Xkz" firstAttribute="centerX" secondItem="ywY-bv-VIs" secondAttribute="centerX" id="UeH-5W-ZUw"/>
                             <constraint firstItem="dJK-dc-sjC" firstAttribute="centerX" secondItem="ywY-bv-VIs" secondAttribute="centerX" id="jtK-dC-kOX"/>
                             <constraint firstItem="HAV-c3-42W" firstAttribute="top" secondItem="dJK-dc-sjC" secondAttribute="bottom" constant="20" id="p4w-z3-rYm"/>
                             <constraint firstItem="dJK-dc-sjC" firstAttribute="top" secondItem="GfM-mK-9SD" secondAttribute="bottom" constant="40" id="qy7-B2-G47"/>
                             <constraint firstItem="HAV-c3-42W" firstAttribute="centerX" secondItem="ywY-bv-VIs" secondAttribute="centerX" id="ste-h5-PaO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="DisplayEmoji" destination="dJK-dc-sjC" id="LjD-xg-fwY"/>
+                        <outlet property="emojiCategory" destination="l9o-aT-Xkz" id="gKP-yR-IaO"/>
+                        <outlet property="emojiDefinition" destination="HAV-c3-42W" id="w9P-8j-8L1"/>
+                        <outlet property="emojiYear" destination="i9e-jv-NPj" id="flC-iN-cpL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37J-Db-zNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
