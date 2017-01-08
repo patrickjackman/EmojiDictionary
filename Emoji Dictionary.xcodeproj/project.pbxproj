@@ -12,6 +12,7 @@
 		CDD66A031E219654003AF494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD66A011E219654003AF494 /* Main.storyboard */; };
 		CDD66A051E219654003AF494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD66A041E219654003AF494 /* Assets.xcassets */; };
 		CDD66A081E219654003AF494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD66A061E219654003AF494 /* LaunchScreen.storyboard */; };
+		CDD66A101E21BE17003AF494 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD66A0F1E21BE17003AF494 /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CDD66A041E219654003AF494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD66A071E219654003AF494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDD66A091E219654003AF494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD66A0F1E21BE17003AF494 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				CDD669FD1E219654003AF494 /* AppDelegate.swift */,
 				CDD669FF1E219654003AF494 /* ViewController.swift */,
+				CDD66A0F1E21BE17003AF494 /* DefinitionViewController.swift */,
 				CDD66A011E219654003AF494 /* Main.storyboard */,
 				CDD66A041E219654003AF494 /* Assets.xcassets */,
 				CDD66A061E219654003AF494 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD66A001E219654003AF494 /* ViewController.swift in Sources */,
+				CDD66A101E21BE17003AF494 /* DefinitionViewController.swift in Sources */,
 				CDD669FE1E219654003AF494 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

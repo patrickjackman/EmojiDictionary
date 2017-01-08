@@ -32,6 +32,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedEmoji = emoji[indexPath.row]
+        performSegue(withIdentifier: "moveSegue", sender: selectedEmoji)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(sender)
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
